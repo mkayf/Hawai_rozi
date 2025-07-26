@@ -1,0 +1,8 @@
+=> Git pull from main branch
+=> Run composer install
+=> Run npm install
+=> Run cp .env.example .env to create .env file in vscode terminal
+=> Run php artisan key:generate to generate app key
+=> Run php artisan migrate to get all the tables in db
+=> Run php artisan serve to run project
+=> Run npm run dev to compile and run css and js files
