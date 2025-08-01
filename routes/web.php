@@ -5,3 +5,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::view('/register-user', 'pages.user.register_user');
