@@ -19,7 +19,7 @@
     <p>Join the platform that connects people with solutions.</p>
   </div>
   <div class="p-4">
-    <form action="" method="POST" class="user-registration-form" onsubmit="return checkValidation()">
+    <form action="" method="POST" class="user-registration-form">
       @csrf
 
       <div class="mb-3">
@@ -28,16 +28,17 @@
         <small style="color: red" class="user-name-error"></small>
       </div>
 
+      
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="number" class="form-control user-input" id="phone" name="phone_number" required />
+        <small class="user-phone-error"></small>
+      </div>
+      
       <div class="mb-3">
         <label for="email" class="form-label">Email <span class="text-muted">(optional)</span></label>
         <input type="email" class="form-control user-input" id="email" name="email"  />
         <small class="user-email-error"></small>
-      </div>
-
-      <div class="mb-3">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control user-input" id="phone" name="phone_number" required />
-        <small class="user-phone-error"></small>
       </div>
 
       <div class="mb-3">
