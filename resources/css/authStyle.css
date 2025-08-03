@@ -1,0 +1,99 @@
+/* User registeration page */
+.registration-card {
+  max-width: 500px;
+  margin: 60px auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.registration-header {
+  background-color: var(--partial-dark-green);
+  color: white;
+  padding: 30px 20px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+}
+
+.registration-header h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.registration-header p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.form-control:focus {
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 0.2rem rgba(88, 129, 87, 0.25);
+}
+
+.btn-register {
+  background-color: var(--light-green);
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: var(--partial-dark-green);
+}
+
+/* User registeration page */
+
+/* User login page */
+
+.login-card {
+  max-width: 450px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.login-header {
+  background-color: var(--partial-dark-green);
+  color: white;
+  padding: 1.5rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.login-header p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.user-input:focus {
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 0.2rem rgba(88, 129, 87, 0.25);
+}
+
+.btn-login {
+  background-color: var(--dark-green);
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.btn-login:hover {
+  background-color: var(--partial-dark-green);
+}
+
+
+/* User login page */
