@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::view('/register-user', 'pages.user.register_user');
+
+Route::view('/login-user', 'pages.user.login_user');

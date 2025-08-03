@@ -47,3 +47,53 @@
 }
 
 /* User registeration page */
+
+/* User login page */
+
+.login-card {
+  max-width: 450px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.login-header {
+  background-color: var(--partial-dark-green);
+  color: white;
+  padding: 1.5rem;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.login-header p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.user-input:focus {
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 0.2rem rgba(88, 129, 87, 0.25);
+}
+
+.btn-login {
+  background-color: var(--dark-green);
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.btn-login:hover {
+  background-color: var(--partial-dark-green);
+}
+
+
+/* User login page */
