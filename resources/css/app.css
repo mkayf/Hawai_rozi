@@ -9,3 +9,29 @@
     --partial-dark-green: #3a5a40;
     --dark-green: #344e41;
 }
+
+/* Navbar  */
+
+.navbar{
+    background-color: var(--light-green);
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px  40px;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-item a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.dropdown-menu li a{
+    color:black;
+    font-weight: normal;
+}
+
+
