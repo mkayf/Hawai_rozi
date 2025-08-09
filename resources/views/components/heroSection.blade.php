@@ -11,8 +11,9 @@
                 <div class="hero-section-para">
                     <p>On Hawayi Rozi, plumbers, electricians, painters, and multiple experts of every skill are always ready for your work</p>
                 </div>
-                <div class="hero-section-btn">
-                    <button>Join As Worker</button>
+                <div class="hero-section-btn d-flex gap-3">
+                    <button>Find work</button>
+                    <button>Get help now</button>
                 </div>    
             </div>
             <!-- right-sectiom  -->

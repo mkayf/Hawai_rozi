@@ -18,8 +18,11 @@
     <!-- footer-css-link  -->
     @vite('resources/css/footer.css')
 
-     <!-- hero-section-css-link  -->
+    <!-- hero-section-css-link  -->
     @vite('resources/css/heroSection.css')
+
+    <!-- services-section-css-link  -->
+    @vite('resources/css/services.css')
 
     <!-- font-awesome-cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,13 +32,10 @@
 
     @include('components.navbar')
 
-    <!-- <div class="container"> -->
-            @include('components.heroSection')
-    <!-- </div> -->
-
+    @yield('content')
+    
     @include('components.footer')
     
-
     {{-- bootstrap-js-link  --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     {{-- app.js --}}

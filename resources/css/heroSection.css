@@ -10,7 +10,7 @@
     height:500px;
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.1),  /* top dark */
-    rgba(0, 0, 0, 0.3)   /* bottom dark */
+    rgba(0, 0, 0, 0)   /* bottom dark */
     ),
     url(../../public/images/hero-setion-bg.jpg);
     background-size: cover;
