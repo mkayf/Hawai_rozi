@@ -1,12 +1,12 @@
 
 .footer-section{
-    background-color: #83c882;
+    background-color: #6fa26e;
     width: 100%;
     height: auto;
 }
 .footer-container{
     width: 100%;
-    color: #012f0a;
+    color:black;
     padding: 0px 50px ;
     padding-top: 30px;
     padding-bottom: 24px;
@@ -26,6 +26,7 @@
 .footer-left-ul-1 li{
     list-style: none;
     padding: 10px 0px;
+    width: 230px;
 }
 .footer-left-ul-1 li i{
     font-size: 18px;

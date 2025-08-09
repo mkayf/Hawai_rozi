@@ -10,10 +10,11 @@
     --dark-green: #344e41;
 }
 
+
 /* Navbar  */
 
 .navbar{
-    background-color: var(--light-green);
+      background-color: #6fa26e;
 }
 .container-fluid{
     display: flex;
@@ -22,10 +23,10 @@
     margin: 0px  40px;
 }
 .navbar-brand{
-    color: white;
+    color: black;
 }
 .nav-item a{
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 600;
 }

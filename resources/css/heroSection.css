@@ -1,0 +1,64 @@
+
+/* heading-font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+/* custom-font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: "Open Sans", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.hero-section{
+    width:100%;
+    margin-bottom: 50px;
+}
+.hero-section-bg-img{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGFxHZeEcA4iraAzp7NTOgQNkq-KlOdwApbg&s');
+    background-size: cover; /* image poori jagah le */
+    background-position: center; /* image center me rahe */
+    background-repeat: no-repeat;
+    height: 500px;
+    width:100%;
+}
+.hero-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    padding: 0px 50px;
+}
+.hero-section-label label{
+    font-size: 14px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+}
+.hero-section-heading h3{
+    font-size: 50px;
+    font-weight: 700;
+    width:500px;
+}
+.hero-section-heading span{
+    color: green;
+    font-weight:800;
+}
+.hero-section-para{
+    width: 550px;
+    margin-top: 10px;
+}
+.hero-section-btn{
+    margin-top: 10px;
+}
+.hero-section-btn button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+}
