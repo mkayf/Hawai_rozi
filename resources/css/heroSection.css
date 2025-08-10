@@ -7,17 +7,26 @@
 .hero-section{
     width:100%;
     margin-bottom: 50px;
+    height:500px;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.1),  /* top dark */
+    rgba(0, 0, 0, 0.3)   /* bottom dark */
+    ),
+    url(../../public/images/hero-setion-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hero-section-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
 }
 .hero-left-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 500px;
-    padding: 0px 50px;
-}
-.hero-section-bg-img{
-    display: flex;
+    /* height: 500px; */
 }
 .hero-section-label label{
     font-size: 14px;
@@ -25,7 +34,7 @@
     /* margin-bottom: 10px; */
 }
 .hero-section-heading h3{
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 700;
     width:500px;
 }
@@ -46,10 +55,101 @@
     background-color: green;
     color: white;
     border: none;
+    transition: all ease-in-out 0.3s;
 }
-.hero-right-section{
-    display: flex;
+.hero-section-btn button:hover{
+    transform: translateY(-10px);
 }
 .hero-right-section img{
-    width:200px;
+    width:300px;
+    height: 500px;
+    object-fit: cover;
 }
+
+/* hero-section-Responsive  */
+
+@media(max-width:992px){
+
+    .hero-section-heading h3{
+        font-size: 30px;
+        width:400px;
+    }
+    .hero-section-para{
+        width: 300px;
+        font-size: 16px;
+    }
+    .hero-section-container{
+        padding: 0px 50px;
+    }
+
+}
+@media(max-width:768px){
+
+    .hero-right-section img{
+        display: none;
+    }
+    .hero-section{
+        height: 350px;
+    }    
+    .hero-section-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        padding: 0px;
+    }
+    .hero-left-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .hero-section-heading h3{
+        max-width:400px;
+        width: 100%;
+    }    
+    .hero-section-para{
+        max-width: 400px;
+        width: 100%;
+    }
+    .hero-section-label,
+    .hero-section-btn{
+        align-self: flex-start; 
+     }
+}
+@media(max-width:768px){
+
+    .hero-section{
+        height: 250px;
+    }    
+    .hero-section-container{
+        height: 250px;
+    }
+    .hero-section-heading h3{
+        max-width:300px;
+        width: 100%;
+        font-size: 24px;
+    }    
+    .hero-section-para{
+        max-width: 300px;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .hero-section-label label{
+        font-size: 12px;
+    }
+    .hero-section-btn{
+        margin-top: 0;
+    }
+    .hero-section-btn button{
+        padding: 8px 8px;
+        border-radius: 8px;
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 14px;
+    }
+}
+
+
