@@ -5,4 +5,4 @@
 => Run php artisan key:generate to generate app key
 => Run php artisan migrate to get all the tables in db
 => Run php artisan serve to run project
-=> Run npm run dev to compile and run css and js files
+=> Run npm run dev to compile and run c
