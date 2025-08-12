@@ -13,4 +13,5 @@
 
     @include('components.heroSection')
     @include('components.services')
+    @include('components.benefits')
 @endsection

@@ -1,0 +1,78 @@
+.benefits-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.benefits-main-heading h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.benefits-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px;
+    text-align: center;
+    align-items: center;
+}
+.benefits-container i{
+    font-size: 24px;
+    background-color: green;
+    border-radius: 50%;
+    /* padding: 20px; */
+    width: 50px;
+    height: 50px;
+    padding-top: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+.benefits-container h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+.benefits-container p{
+    margin-top: 20px;
+    text-align:center;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+/* Responsive-benefites-section  */
+
+@media(max-width:1200px){
+    .benefits-container h3{
+        font-size: 19px;
+    }
+}
+
+@media(max-width:992px){
+    .benefits-container h3{
+        font-size: 19px;
+    }
+    .benefits-container p{
+        font-size: 14px;
+        padding: 0px 10px;
+    }    
+    .benefits-container{
+        margin: 50px 20px;
+    }
+}
+
+@media(max-width:768px){
+    .benefits-main-heading h3{
+        font-size: 30px;
+        font-weight: 600;
+    }    
+    .benefits-container p{
+        font-size: 14px;
+        padding: 0px 10px;
+    }    
+    .benefits-container{
+        margin: 50px 50px;
+        flex-direction: column;
+        gap:50px
+    }
+}
