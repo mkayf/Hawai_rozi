@@ -17,8 +17,8 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 footer-left-inner-col-right">
                         <h2>Navigation</h2>
                         <div class="footer-left-ul-2">
-                            <li><a href="home" style="color: black; text-decoration:none">Home</a></li>
-                            <li><a href="about" style="color: black; text-decoration:none">About</a></li>
+                            <li><a href="/home" style="color: black; text-decoration:none">Home</a></li>
+                            <li><a href="/about" style="color: black; text-decoration:none">About</a></li>
                             <li>Services</li>
                             <li>Accounts</li>
                         </div>

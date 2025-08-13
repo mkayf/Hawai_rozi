@@ -7,14 +7,10 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-<<<<<<< HEAD
 Route::get('/about', function () {
     return view('pages.about');
 });
 
-=======
-// User auth:
->>>>>>> 837d08838e161f6eab006e1e1e24f13a80aaa1b0
 
 Route::view('/register-user', 'pages.user.register_user');
 
