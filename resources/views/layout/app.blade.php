@@ -8,6 +8,8 @@
 
     {{-- bootstrap-cdn-link  --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    {{-- AOS-Animation-link --}}
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     {{-- app.css --}}
     @vite('resources/css/app.css')
@@ -29,9 +31,7 @@
 
     @include('components.navbar')
 
-    <!-- <div class="container"> -->
-            @include('components.heroSection')
-    <!-- </div> -->
+    @yield('content')
 
     @include('components.footer')
     
@@ -42,5 +42,53 @@
     @vite('resources/js/app.js')
     {{-- custom script for each page --}}
     @yield('script')
+    {{-- AOS-Animation-script --}}
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+{{-- Counter-Animation-Script --}}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+        let countersStarted = false; // Prevents restarting when scrolling back
+
+        const startCounters = () => {
+            counters.forEach(counter => {
+                counter.innerText = '0';
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / 200;
+
+                    if (count < target) {
+                        counter.innerText = `${Math.ceil(count + increment)}`;
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersStarted) {
+                    startCounters();
+                    countersStarted = true; // Prevent running multiple times
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+        // Observe the section containing the counters
+        const counterSection = document.querySelector('.counter-section');
+        if (counterSection) {
+            observer.observe(counterSection);
+        }
+    });
+</script>
+
+
 </body>
 </html>
