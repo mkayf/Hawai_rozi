@@ -1,0 +1,135 @@
+.call-section{
+    background-color: #6fa26e;
+    margin: 100px 50px;
+    border-radius: 16px;
+}
+.call-content{
+    display: flex;
+    justify-content: space-between;
+}
+.call-left-content{
+    padding: 50px 0px 50px 80px;
+    align-content: center;
+}
+.call-left-content h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+.call-left-content p{
+    /* text-align: justify; */
+    margin-top: 20px;
+    width: 500px;
+}
+.call-left-content button{
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: green;
+    transition: all ease ease-in-out 0.3s;
+    margin-top: 10px;
+}
+.call-left-content button:hover{
+    transform: translateY(-10px);
+}
+.joinWorkerBtn{
+    margin-left: 10px;
+}
+.call-right-content img{
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9999px 850px 850px 9999px; /* left top & left bottom fully round */    
+}
+
+/* Responsive-callToAction-section  */
+
+@media(max-width:1280px){
+
+    .call-left-content p{
+        width: 450px;
+        font-size: 14px;
+    }
+    .call-right-content img{
+        width: 500px;    
+    }
+
+}
+
+@media(max-width:1130px){
+
+    .call-left-content p{
+        width: 400px;
+    }
+    .call-right-content img{
+        width: 400px;    
+    }
+
+}
+
+@media(max-width:992px){
+
+    .call-left-content p{
+        width: 300px;
+    }
+    .call-right-content img{
+        width: 400px;    
+    }
+    .call-left-content button{
+        padding: 12px 10px;
+    }
+
+}
+
+@media(max-width:880px){
+
+    .call-right-content img{
+        width: 300px;    
+    }
+    .call-left-content{
+        padding: 50px 0px 50px 50px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .call-right-content{
+        display: none;
+    }
+    .call-content{
+        display: flex;
+        justify-content: center;
+    }
+    .call-left-content p{
+        width: 100%;
+    }
+    .call-left-content{
+        padding: 50px;
+    }
+    .call-left-content button{
+        padding: 8px 8px;
+        font-size: 14px;
+    }    
+    .joinWorkerBtn{
+        margin-left: 0px;
+    }
+    .call-left-content h3{
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:420px){
+
+    .call-left-content p{
+        font-size: 12px;
+    }
+    .call-left-content h3{
+        font-size: 24px;
+    }
+
+
+}
