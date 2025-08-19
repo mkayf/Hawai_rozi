@@ -73,9 +73,9 @@
       </div>
 
       <div>
-        @if (session('error'))
-            <small class="server-error text-danger">{{ session('error') }}</small>
-        @endif
+        @error('account_creation_failed')
+            <small class="server-error text-danger">{{ $message }}</small>
+        @enderror
       </div>
 
     </form>

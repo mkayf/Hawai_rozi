@@ -32,6 +32,12 @@
         <small class="user-login-password-error text-danger"></small>
       </div>
 
+      <div class="mb-3">
+        <input type="checkbox" id="remember_me" name="remember_me">
+        <label for="remember_me" class="form-label ms-1">Remember me</label>
+        <small class="user-login-password-error text-danger"></small>
+      </div>
+
       <div class="d-grid">
         <button type="submit" class="btn btn-login">Login</button>
       </div>
