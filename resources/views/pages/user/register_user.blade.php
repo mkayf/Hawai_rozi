@@ -19,7 +19,7 @@
     <p>Join the platform that connects people with solutions.</p>
   </div>
   <div class="p-4">
-    <form action="/register" method="POST" class="user-registration-form">
+    <form action="{{route('register_user')}}" method="POST" class="user-registration-form">
       @csrf
 
       <div class="mb-3">
@@ -52,7 +52,7 @@
 
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control user-input" id="password" name="password" value="{{old('password')}}" required />
+        <input type="password" class="form-control user-input" id="password" name="password" required />
         <small class="user-password-error text-danger"></small>
         @error('password')
           <small class="server-error text-danger">{{ $message }}</small>
@@ -68,15 +68,16 @@
         @enderror
       </div>
 
+      @error('account_creation_failed')
+      <div>
+        <small class="server-error text-danger">{{ $message }}</small>
+      </div>
+      @enderror
+
       <div class="d-grid">
         <button type="submit" class="btn btn-register">Register</button>
       </div>
 
-      <div>
-        @if (session('error'))
-            <small class="server-error text-danger">{{ session('error') }}</small>
-        @endif
-      </div>
 
     </form>
   </div>

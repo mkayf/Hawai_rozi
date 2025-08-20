@@ -39,7 +39,6 @@
 }
 .nav-item a{
     color: black;
-    font-size: 18px;
     font-weight: 600;
 }
 .dropdown-menu li a{
@@ -47,4 +46,13 @@
     font-weight: normal;
 }
 
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -0.125rem;
+}
 
