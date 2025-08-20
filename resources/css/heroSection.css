@@ -7,7 +7,6 @@
 .hero-section{
     width:100%;
     margin-bottom: 50px;
-<<<<<<< HEAD
     height:500px;
     background-image: linear-gradient(
     rgba(0, 0, 0, 0.1),  /* top dark */
@@ -21,23 +20,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 80px;
-=======
->>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
 }
 .hero-left-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-<<<<<<< HEAD
     /* height: 500px; */
-=======
-    height: 500px;
-    padding: 0px 50px;
-}
-.hero-section-bg-img{
-    display: flex;
->>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
 }
 .hero-section-label label{
     font-size: 14px;
@@ -45,11 +34,7 @@
     /* margin-bottom: 10px; */
 }
 .hero-section-heading h3{
-<<<<<<< HEAD
     font-size: 42px;
-=======
-    font-size: 50px;
->>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
     font-weight: 700;
     width:500px;
 }
@@ -70,7 +55,6 @@
     background-color: green;
     color: white;
     border: none;
-<<<<<<< HEAD
     transition: all ease-in-out 0.3s;
 }
 .hero-section-btn button:hover{
@@ -169,12 +153,3 @@
 }
 
 
-=======
-}
-.hero-right-section{
-    display: flex;
-}
-.hero-right-section img{
-    width:200px;
-}
->>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
