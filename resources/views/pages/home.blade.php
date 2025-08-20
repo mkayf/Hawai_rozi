@@ -28,5 +28,6 @@
 
     @include('components.heroSection')
     @include('components.services')
+    @include('components.callToAction')
     @include('components.benefits')
 @endsection

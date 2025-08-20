@@ -55,7 +55,11 @@
     background-color: green;
     color: white;
     border: none;
+<<<<<<< HEAD
     transition: all ease-in-out 0.3s;
+=======
+    transition: all ease-in-out 1s;
+>>>>>>> 107437d98f88dce55a166188465726e3b402125c
 }
 .hero-section-btn button:hover{
     transform: translateY(-10px);
