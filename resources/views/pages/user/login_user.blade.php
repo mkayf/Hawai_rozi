@@ -17,26 +17,37 @@
     <p>Login to continue to Hawai Rozi</p>
   </div>
   <div class="p-4">
-    <form action="" method="POST" class="user-login-form">
+    <form action="{{route('login_user')}}" method="POST" class="user-login-form">
       @csrf
 
       <div class="mb-3">
         <label for="email_or_phone" class="form-label">Email or Phone Number</label>
-        <input type="text" class="form-control user-login-input" id="email_or_phone" name="email_or_phone" placeholder="example@example.com or 03XX-XXXXXXX" />
+        <input type="text" class="form-control user-login-input" id="email_or_phone" name="email_or_phone" placeholder="example@example.com or 03XX-XXXXXXX" value="{{old('email_or_phone')}}" />
         <small class="user-login-identity-error text-danger"></small>
+        @error('email_or_phone')
+          <small class="server-error text-danger">{{ $message }}</small>
+        @enderror
       </div>
 
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control user-login-input" id="password" name="password" placeholder="Enter password" />
         <small class="user-login-password-error text-danger"></small>
+        @error('password')
+          <small class="server-error text-danger">{{ $message }}</small>
+        @enderror
       </div>
 
-      <div class="mb-3">
-        <input type="checkbox" id="remember_me" name="remember_me">
-        <label for="remember_me" class="form-label ms-1">Remember me</label>
-        <small class="user-login-password-error text-danger"></small>
+      <div class="mb-2">
+        <input type="checkbox" id="remember_user" name="remember_user">
+        <label for="remember_user" class="form-label ms-1">Remember me</label>
+      </div> 
+  
+      @error('login_failed')
+      <div class="mb-2">
+        <small class="'server-error text-danger">{{$message}}</small>
       </div>
+      @enderror
 
       <div class="d-grid">
         <button type="submit" class="btn btn-login">Login</button>

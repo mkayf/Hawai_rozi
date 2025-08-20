@@ -1,0 +1,11 @@
+@auth
+            <li><a class="dropdown-item" href="{{route('user_profile')}}">Your profile</a></li>
+            <form action="{{route('logout_user')}}" method="post">
+              @csrf
+              <button type="submit" class="dropdown-item">Logout</button></li>
+            </form>
+            @endauth
+            @guest
+            <li><a class="dropdown-item" href="{{route('register_user_form')}}">Register</a></li>
+            <li><a class="dropdown-item" href="{{route('login_user_form')}}">Login</a></li>
+            @endguest

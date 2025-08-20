@@ -31,7 +31,7 @@ class AuthController extends Controller
         ]);
 
         if (!$user) {
-            return redirect()->route('register_user_form')->withErrors([
+            return redirect()->back()->withErrors([
                 "account_creation_failed" => "We couldn't create your account, please try again"
             ])->withInput();
         }
@@ -48,12 +48,37 @@ class AuthController extends Controller
         $validation = $request->validate([
             'email_or_phone' => ['required', $emailOrPhoneValidation],
             'password' => ['required', 'min:8'],
-            'remember' => ['sometimes', 'boolean']
+            'remember_user' => ['sometimes']
         ]);
 
         // Now this can be email or phone number
         $loginField = $emailOrPhoneValidation->type;
 
-        // if(Auth::attempt())
+        if(isset($validation['remember_user'])){
+            $remember = true;
+        } else{
+            $remember = false;
+        }
+
+        if(Auth::attempt([$loginField => $validation['email_or_phone'], 'password' => $validation['password']], $remember)){
+            return redirect()->route('home')->with('login_success', 'You are logged in.');
+        } else{
+            return redirect()->back()->withErrors(["login_failed" => "Your credentials are invalid"])->withInput();
+        }
+
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect()->route('home')->with('logged_out', 'You have been logged out');
+    }
+
+    public function userProfile(){
+        return view('pages.user.user_profile');
     }
 }
