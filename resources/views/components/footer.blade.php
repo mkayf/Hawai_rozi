@@ -17,8 +17,8 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 footer-left-inner-col-right">
                         <h2>Navigation</h2>
                         <div class="footer-left-ul-2">
-                            <li>Home</li>
-                            <li>About</li>
+                            <li><a href="home" style="color: black; text-decoration:none">Home</a></li>
+                            <li><a href="about" style="color: black; text-decoration:none">About</a></li>
                             <li>Services</li>
                             <li>Accounts</li>
                         </div>
@@ -38,7 +38,7 @@
         <div class="footer-line"></div>
         <div class="row footer-copyright-para">
             <div class="col-12 footer-para col-12">
-                <p>&copy; 2025 Hawayi Rozi. Developed by A. Samad, M. Kayf & M. Salman. All rights reserved.</p>
+                <p>&copy; 2025 Hawayi Rozi. Developed by A. Samad, M. Kayf & Salman Ahmed. All rights reserved.</p>
             </div>
         </div>
     </div>

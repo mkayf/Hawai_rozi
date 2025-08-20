@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::view('/about', 'pages.about');
+
 // User auth:
 
 Route::middleware('guest')->group(function(){

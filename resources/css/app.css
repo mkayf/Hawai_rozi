@@ -39,6 +39,10 @@
 }
 .nav-item a{
     color: black;
+<<<<<<< HEAD
+=======
+    font-size: 18px;
+>>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
     font-weight: 600;
 }
 .dropdown-menu li a{
@@ -46,6 +50,7 @@
     font-weight: normal;
 }
 
+<<<<<<< HEAD
 .dropdown-submenu {
   position: relative;
 }
@@ -55,4 +60,6 @@
   right: 100%;
   margin-top: -0.125rem;
 }
+=======
+>>>>>>> 8e00b593057412f5d7fdb4fe65d567bf5adbd884
 
