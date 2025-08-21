@@ -18,17 +18,15 @@
                 </div>
             </div>
             <div class="requirment-form-right-content">
-                <h3>Requirment Form</h3>
+                <h3>Requirement Form</h3>
                 <form action="" class="requirment-form">
                 <div class="categorie-input">    
-                <label for="">Categorie</label>    
-                <select name="" id="">
-                    <option value="">Select your categorie</option>
-                    <option value="">I.T Workers</option>
-                    <option value="">Electritions</option>
-                    <option value="">Nursing staff</option>
-                    <option value="">Plumbers</option>
-                    <option value="">Mechanics</option>
+                <label for="">Services</label>    
+                <select name="services" id="">
+                    <option value="">Select the service you want</option>
+                    @foreach ($services as $service)
+                        <option value="{{$service->id}}">{{$service->service}}</option>
+                    @endforeach
                 </select>
                 </div>
                 <div class="description-input">

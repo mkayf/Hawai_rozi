@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\User\AuthController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,8 +9,6 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('/about', 'pages.about');
-Route::view('/services', 'pages.services');
-
 
 // User auth:
 
@@ -26,5 +25,5 @@ Route::middleware('guest')->group(function(){
 Route::middleware('auth')->group(function(){
     Route::post('/logout-user', [AuthController::class, 'logout'])->name('logout_user');
     Route::get('/user/profile', [AuthController::class, 'userProfile'])->name('user_profile');
+    Route::get('/services', [ServicesController::class, 'services_page'])->name('services_page');
 });
-
