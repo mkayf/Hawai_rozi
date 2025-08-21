@@ -12,7 +12,10 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">About Us</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
@@ -23,7 +26,8 @@
             <li><a class="dropdown-item" href="#">Plumbers</a></li>
             <li><a class="dropdown-item" href="#">Mechanics</a></li>
           </ul>
-        </li>
+        </li> -->
+        
         <li class="nav-item dropdown">
 
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,8 +44,9 @@
               <a class="dropdown-item submenu-toggle" href="#"><i class="fa-solid fa-user"></i> For user</a>
               <ul class="dropdown-menu">
 
-                <li><a class="dropdown-item" href="{{route('user_login_form')}}"><i class="fa-solid fa-arrow-right-to-bracket"></i> User login</a></li>
                 <li><a class="dropdown-item" href="{{route('user_register_form')}}"><i class="fa-solid fa-user-plus"></i> User register</a></li>
+                <li><a class="dropdown-item" href="{{route('user_login_form')}}"><i class="fa-solid fa-arrow-right-to-bracket"></i> User login</a></li>
+                
               </ul>
             </li>
 
