@@ -8,6 +8,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('/about', 'pages.about');
+Route::view('/services', 'pages.services');
+
 
 // User auth:
 
