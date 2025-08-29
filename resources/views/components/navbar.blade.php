@@ -54,8 +54,8 @@
             <li class="dropdown-submenu dropstart">
               <a class="dropdown-item submenu-toggle" href="#"><i class="fa-solid fa-user-gear"></i> For worker</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Worker register</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Worker login</a></li>
+                <li><a class="dropdown-item" href="{{route('worker_register_form')}}"><i class="fa-solid fa-user-plus"></i> Worker register</a></li>
+                <li><a class="dropdown-item" href="{{route('worker_login_form')}}"><i class="fa-solid fa-arrow-right-to-bracket"></i> Worker login</a></li>
               </ul>
             </li>  
 

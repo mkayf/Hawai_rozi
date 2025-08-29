@@ -28,3 +28,15 @@ Route::middleware('auth')->group(function(){
     Route::get('/user/profile', [AuthController::class, 'userProfile'])->name('user_profile');
 });
 
+
+// worker auth 
+
+Route::middleware('guest')->group(function(){
+    Route::view('/woker/register', 'pages.worker.register_worker')->name('worker_register_form');
+    
+    Route::view('/worker/login', 'pages.worker.login_worker')->name('worker_login_form');
+    
+    Route::post('/worker/register', [AuthController::class, 'register'])->name('register_worker');
+    
+    Route::post('/worker/login', [AuthController::class, 'login'])->name('login_worker');
+});
